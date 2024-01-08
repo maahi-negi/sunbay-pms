@@ -1,0 +1,345 @@
+#ss_step_div{display: block;padding: 5px 0;}
+.containers{display:none;}
+th .form-control-checkbox,
+td .form-control-checkbox { float: right}
+.form-control-checkbox {
+    height: 18px;width: 18px;cursor: pointer
+}
+.step-2-tbl thead {
+    border: 1px solid #f6f6f6;background: #ccc
+}
+.step-2-tbl th {
+    padding: 10px 8px!important;text-align: center
+}
+.step-2-tbl td {
+    padding: 8px!important;text-align: center
+}
+.step-2-tbl p.ds_old_value {
+    margin: 0 0 5px;padding: 0 0 5px
+}
+.step-2-tbl p.ds_new_value {
+    margin: 0;font-weight: 600;color: #F44336
+}
+.step-2-tbl .btn { box-shadow: none }
+.sync-container { padding: 0 15px;}
+.fix-sync h6 {font-weight: 600}
+a.add_button.active {
+    background: #003a8b
+}
+.sync-process ul {
+    margin: 0;padding: 0
+}
+.sync-process ul li:not(:first-child) a::before {
+    position: absolute;content: "";height: 8px;
+    width: 87px;background: #6c757d;
+    z-index: 9;top: 16px;right: 37px
+}
+.sync-process li {
+    list-style: none;display: inline-block;width: 120px
+}
+.sync-process a {
+    position: relative;margin-right: 1px!important;
+    z-index: 111;border-radius: 50%;width: 40px;
+    height: 40px;display: inline-block;line-height: 40px;
+    font-size: 19px
+}
+
+.sync-process ul li:not(:first-child) a.active::before,
+.sync-process ul li:not(:first-child) a.complete::before {
+    background-color: #007bff!important;right: 38px;
+}
+.sync-process a.active {
+    color: #fff!important;background-color: #007bff!important
+}
+.sync-process a.incomplete {
+    color: #fff!important;background-color: #6c757d!important
+}
+.sync-process a.complete {
+    color: #fff!important;background-color: #007bff!important
+}
+.fix-sync {
+    height: calc(100vh - 255px);overflow: auto;background: #fff;
+    border: 1px solid #e4e4e4;border-radius: 7px;
+}
+.fix-sync h3 {
+    text-align: center;font-weight: 600;
+    text-transform: uppercase;margin-top: 10px;
+}
+.scrollable-table {
+    height: calc(100vh - 475px);overflow: auto
+}
+.bg-sdanger { background-color: #fadbd8!important}
+.bg-ssuccess {background-color: #d2f4e8!important}
+.sr-ans {margin: 20px 30px 30px;}
+.sr-ans i {
+    font-weight: 600;font-size: 36px;border: 2px solid #aaa;
+    padding: 27px 20px;border-radius: 69%
+}
+.sr-ans span {
+    display: block;margin-top: 15px;font-weight: 500;
+    font-size: 19px;margin-bottom: 10px
+}
+.sr-ans ul.same-btns {
+    list-style: none;margin-bottom: .5rem;
+}
+.sr-ans ul.same-btns li {
+    display: inline-block;padding: 0 8px;line-height: 15px
+}
+.sr-ans ul.same-btns li:not(:first-child) {
+    border-left: 1px solid
+}
+.sr-ans ul.same-btns li a {
+    font-weight: 500;text-transform: uppercase
+}
+.sr-ans ul.sys-btns {
+    list-style: none
+}
+.sr-ans ul.sys-btns li {
+    display: inline-block;padding: 0 8px;line-height: 15px
+}
+.sr-ans ul.sys-btns li:not(:first-child) {
+    border-left: 1px solid
+}
+.sr-ans ul.sys-btns li a {
+    font-weight: 500;text-transform: uppercase
+}
+.sr-synop {
+    padding: 0 20px 20px;text-align: center
+}
+.sr-synop h6 {
+    text-transform: uppercase;font-size: 17px
+}
+.sr-synop p {font-size: 16px}
+tr.bg-ssuccess input[type="checkbox"],
+tr.bg-sdanger input[type="checkbox"] {display: none;}
+#bulk-action-box {
+    padding: 8px 10px;margin-bottom: 8px;background: #f4f4f4;border: 1px solid #e4e4e4;
+}
+.choose-file-wrap{
+    max-width: 70%;margin: 0 auto;
+}
+
+.file-upload {
+    display: block;text-align: center;font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;width: calc(100% - 125px);
+}
+
+.file-upload .file-select {
+    display: block;border: 2px solid #dce4ec;
+    color: #34495e;cursor: pointer;height: 40px;
+    line-height: 40px;text-align: left;background: #FFFFFF;
+    overflow: hidden;position: relative;
+}
+
+.file-upload .file-select .file-select-button {
+    background: #dce4ec;padding: 0 10px;display: inline-block;
+    height: 40px;line-height: 40px;
+}
+
+.file-upload .file-select .file-select-name {
+    line-height: 40px;display: inline-block;padding: 0 10px;
+}
+
+.file-upload .file-select:hover {
+    border-color: #34495e;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload .file-select:hover .file-select-button {
+    background: #34495e;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload.active .file-select {
+    border-color: #3fa46a;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload.active .file-select .file-select-button {
+    background: #3fa46a;
+    color: #FFFFFF;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+
+.file-upload .file-select input[type=file] {
+    z-index: 100;cursor: pointer;
+    position: absolute;height: 100%;width: 100%;
+    top: 0;left: 0;opacity: 0;filter: alpha(opacity=0);
+}
+
+.file-upload .file-select.file-select-disabled {
+    opacity: 0.65;
+}
+
+.file-upload .file-select.file-select-disabled:hover {
+    cursor: default;
+    display: block;
+    border: 2px solid #dce4ec;
+    color: #34495e;
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 5px;
+    text-align: left;
+    background: #FFFFFF;
+    overflow: hidden;
+    position: relative;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-button {
+    background: #dce4ec;
+    color: #666666;
+    padding: 0 10px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.file-upload .file-select.file-select-disabled:hover .file-select-name {
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.btn-info:focus{
+    background-color: #f56954!important;
+}
+
+.btn-info{
+    background-color: #f56954!important;
+    transition: 0.3s ease all;
+}
+
+.btn-info:hover, #backButton:hover{
+    background-color: #003a8b!important;
+}
+
+.nav-pills .nav-item .nav-link.active{
+    background: #f56954;
+}
+
+.nav-pills .nav-item{
+    margin: 0 3px 3px 0;
+}
+
+.nav-pills .nav-link{
+    font-weight:600;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+#pills-communities div.row div h6{
+    padding-bottom: .5rem;
+}
+
+.tab-content label{
+    font-size: 15px;
+}
+
+.footer-buttons{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.mapping-fields-wrapper{
+    height: calc(100vh - 345px);
+    overflow: auto;
+}
+
+#backButton{
+    display: none;
+    background-color: #313131!important;
+    transition: 0.3s ease background-color;
+}
+
+.report-wrap{
+    display: none;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+select.form-control:disabled{
+    background-color: #eee;
+}
+
+@media(max-width:1200px){
+    .mapping-fields-wrapper{
+        height: auto;
+        overflow: hidden;
+        padding-bottom: 30px;
+    }
+}
+
+@media(min-width: 992px){
+    .sync-process{
+        position: absolute;
+        top: 14px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1111;
+    }
+}
+
+@media(max-width: 992px){
+    #syncresponse{
+        position:relative;
+    }
+    .fix-sync{height: auto;}
+}
+
+@media(max-width:768px){
+    .file-upload{width: 100%; margin-bottom: 5px;}
+    .choose-file-wrap{max-width: 100%;}
+}
+@media(max-width: 425px){
+    .nowrap{
+        white-space: unset;
+    }
+    .sync-process li{
+        width: 80px;
+    }
+    .sync-process ul li:not(:first-child) a::before{
+        width: 47px;
+    }
+}
+.btn-orange {
+    background: #f56954;
+    padding: 0.65rem 1.2rem;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    color: #fff!important;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    border: 0;
+    transition: background .5s ease-in-out;
+}
+a.add_button {
+    background: #f56954;
+    padding: 0.65rem 1.2rem;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff!important;
+    text-decoration: none;
+    transition: background .5s ease-in-out;
+    min-width: 101px;
+    text-align: center;
+}
