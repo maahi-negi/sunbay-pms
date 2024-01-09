@@ -1,0 +1,47 @@
+<img src="base.png" style="position: absolute;top: 0;left: 0;mix-blend-mode: color;">
+<canvas id=c style="position: absolute;top: 0;left: 0;"></canvas>
+
+<script>
+    var imgs = [{
+        image:"board.png",
+        color:""
+    }, {
+        image:"shuttur.png",
+        color:"rgb(240, 100, 50)"
+    },{
+        image:"siding.png",
+        color: "rgb(174, 142, 126)"
+    }];
+
+    imgs.forEach(function (e){
+        createImage(e);
+    })
+
+    async function createImage(e){
+        let img = new Image;
+        img.onload = await draw;
+        img.src = e.image;
+        img.alt = e.color;
+        img.style.mixBlendMode = "color";
+    }
+
+    var c = document.getElementById("c");
+    var ctx = c.getContext("2d");
+
+    function draw() {
+        console.log(this);
+        c.width=this.width;
+        c.height=this.height;
+        if(this.alt){
+            // draw color
+            ctx.beginPath()
+            ctx.fillStyle = this.alt;
+            ctx.fillRect(0, 0, this.width, this.height);
+            // set composite mode
+            ctx.globalCompositeOperation = "color";
+        }
+        // draw image
+        ctx.drawImage(this, 0, 0);
+    }
+</script>
+
